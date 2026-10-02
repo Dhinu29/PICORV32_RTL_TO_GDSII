@@ -64,8 +64,22 @@
  
 # Placement
 ```
-
 place_design
+```
+- its take some time  after done you can see the placement along with trail routing
+- by running the command inttration is done checck possible best routing
+```
+timeDesign -preCTS -slackReport -drvReport
+
+createBasicPathGroup -expanded
+
+report_timing -from [all_registers] -to [all_registers]
+
+report_timing -from [all_registers] -to [all_registers] -max_path 237
+
+report_timing -from [all_registers] -to [all_registers] -max_path 237 > reg2reg.rpt
+
+reportCongestion -overflow
 
 ```
 
