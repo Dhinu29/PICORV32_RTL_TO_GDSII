@@ -16,5 +16,22 @@
 - genus -gui
 
 # Cadence innovus
-- 
+- after open the Cadence innovus gui go to files and import the window will be open
+- add the verilog files
+- add the LEF file
+- add the IO file
+- add the Power nets
+  - Power Net  - vdd
+  - Ground Net - vss
+- creat analysis configuration(MMMMC file)
+  - Library sets
+    - max_lib/slow.lib
+    - min_lib/fast.lib
+  - rc_corners
+    - max_rc/captableworst
+    - min_rc/captablbest
+  - op_condition
+    - max_lib/slow.lib/power=10/voltage=0.9/temp=125
+    - min_lib/fast.lib/power=10/voltage=1.1/temp=-40
+
 
