@@ -51,6 +51,30 @@
   - aspect ratio =  1 Note: Square
   - aspect ratio <= 1 Note: Vertical rectangular
   - aspect ratio => 1 Note: Horizontl rectangular
+  - core to die space select Eg: left=right=top=bottom=10
+  - IO pins : incase no IO file in the MMMC file in the floorplan click on the pins and select the pin editor
+  - in bottom pin Group select unassign and select the pins  and right side selecct the spread and also choose the metals(M!-M7)
+  - also choose the assign Fixed status ,Batch Mode, Fix Overlapping
+  - command : checkPinAssignment
+  - command : legalizePin -pin * -moveFixedPin
+  - command : setPtnPinStatus -pin * -status FIXED
+  - command : saveIOFile pins.io
+ 
+# Placement
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
