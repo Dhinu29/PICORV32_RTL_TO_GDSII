@@ -33,5 +33,11 @@
   - op_condition
     - max_lib/slow.lib/power=10/voltage=0.9/temp=125
     - min_lib/fast.lib/power=10/voltage=1.1/temp=-40
+  - delay_corners
+    - max_rc/max.lib
+    - min_rc/min.lib
+  -Constraint model
+    - *.sdc file
+   
 
 
