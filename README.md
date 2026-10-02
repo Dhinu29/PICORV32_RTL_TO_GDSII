@@ -81,6 +81,14 @@ report_timing -from [all_registers] -to [all_registers] -max_path 237 > reg2reg.
 
 reportCongestion -overflow
 
+reportGateCount
+
+optDesign -preCTS
+
+timeDesign -preCTS -slackReport -drvReport
+
+reportCongestion -overflow
+
 ```
 
 
