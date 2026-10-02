@@ -38,6 +38,19 @@
     - min_rc/min.lib
   -Constraint model
     - *.sdc file
-   
+-  before apply and ok you can save the file next time again open  insted of creating new directly load the file
+
+# FloorPlanning
+- after creating the MMMC file the core and die is open  generate
+- sanity Checks mainly check for the quality of netlist
+  - Library check         > checkDesign -physicalLibrary
+  - Netlist Check         > checkDesign -timingLibrary
+  - SDC Checks            > checkDesign -netlist
+-floorplan => specify floorplan
+  - core uilization = 40%
+  - aspect ratio =  1 Note: Square
+  - aspect ratio <= 1 Note: Vertical rectangular
+  - aspect ratio => 1 Note: Horizontl rectangular
+ 
 
 
