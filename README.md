@@ -90,6 +90,17 @@ timeDesign -preCTS -slackReport -drvReport
 reportCongestion -overflow
 
 ```
+# cts
+- click timing and ok can see virtual CTS
+```
+ccopt_design -cts
+
+timeDesign -postCTS -slackReport -drvReport
+
+timeDesign -postCTS -slackReport -hold
+
+reportGateCount
+```
 
 
 
